@@ -11,7 +11,9 @@ class _StoryBoxState extends State<StoryBox> {
         height: 220.0,
         color: Colors.limeAccent,
         child: Card(
-          child: Column(
+          child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child:Column(
             children: <Widget>[
               Row(
                 children: <Widget>[
@@ -32,7 +34,7 @@ class _StoryBoxState extends State<StoryBox> {
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.all(10.0),
+                    // padding: EdgeInsets.all(10.0),
                     width: 160.0,
                     // color: Colors.red,
                     child: Stack(
@@ -73,10 +75,10 @@ class _StoryBoxState extends State<StoryBox> {
                       ],
                     ),
                   ),
-                ],
+                ],  
               )),
             ],
-          ),
+          )),
         ));
   }
 }
