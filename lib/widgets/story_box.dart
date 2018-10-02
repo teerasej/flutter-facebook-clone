@@ -27,22 +27,22 @@ class _StoryBoxState extends State<StoryBox> {
                   )
                 ],
               ),
-              Row(
+              Expanded(
+                  child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  Expanded(
-                      child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      ListTile(
-                        title: Container(
-                          width: 100.0,
-                          child: Text('ok'),
-                        ),
-                      ),
-                    ],
-                  )),
+                  Container(
+                    width: 160.0,
+                    color: Colors.red,
+                    child: Container(
+                      width: 120.0,
+                      height: 160.0,
+                      color: Colors.green,
+                      child: Text('ok'),
+                    ),
+                  )
                 ],
-              )
+              )),
             ],
           ),
         ));
