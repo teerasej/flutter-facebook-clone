@@ -10,7 +10,7 @@ class _NewPostState extends State<NewPost> {
     return Container(
         // height: 100.0,
         padding: EdgeInsets.all(10.0),
-        color: Colors.redAccent,
+        // color: Colors.redAccent,
         child: Card(
           child: Padding(
               padding: EdgeInsets.all(10.0),
@@ -33,26 +33,29 @@ class _NewPostState extends State<NewPost> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      RaisedButton(
+                      FlatButton(
                         onPressed: () {},
                         child: Row(
                           children: <Widget>[
-                            Icon(Icons.videocam),
+                            Icon(Icons.videocam, color: Colors.red[400]),
                             Text('Live')
                           ],
                         ),
                       ),
-                      RaisedButton(
-                        onPressed: () {},
-                        child: Row(
-                          children: <Widget>[Icon(Icons.photo), Text('Photos')],
-                        ),
-                      ),
-                      RaisedButton(
+                      FlatButton(
                         onPressed: () {},
                         child: Row(
                           children: <Widget>[
-                            Icon(Icons.place),
+                            Icon(Icons.photo, color: Colors.green), 
+                            Text('Photos')
+                          ],
+                        ),
+                      ),
+                      FlatButton(
+                        onPressed: () {},
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.place, color: Colors.pink),
                             Text('Check-in')
                           ],
                         ),
