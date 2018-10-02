@@ -11,9 +11,27 @@ class _StoryBoxState extends State<StoryBox> {
     return Container(
             height: 220.0,
             color: Colors.limeAccent,
-            child: Center(
-              child: Text('Story'),
-            ),
+            child: Card(
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Text('Stories'),
+                      FlatButton(
+                        onPressed: () {},
+                        child: Row(
+                          children: <Widget>[
+                            Icon(Icons.play_arrow),
+                            Text('Play All')
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  Row()
+                ],
+              ),
+            )
           );
   }
 }
