@@ -33,14 +33,21 @@ class _StoryBoxState extends State<StoryBox> {
                   children: <Widget>[
                     Container(
                       width: 140.0,
-                      color: Colors.amber,
+                      // color: Colors.amber,
                       child: Stack(
                         fit: StackFit.expand,
                         children: <Widget>[
                           // ภาพ background 
                           Container(
-
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: NetworkImage('https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428566598/article/R11931_image1')
+                              )
+                            ),
                           ),
+                          // ภาพ และชื่อคนอัพ story 
                           Positioned(
                             bottom: 10.0,
                             left: 0.0,
