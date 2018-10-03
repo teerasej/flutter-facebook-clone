@@ -1,10 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/models/story_model.dart';
+
 
 class StoryBox extends StatefulWidget {
   _StoryBoxState createState() => _StoryBoxState();
 }
 
 class _StoryBoxState extends State<StoryBox> {
+
+  List<StoryModel> storyList = new List<StoryModel>();
+
+  _StoryBoxState() : super() {
+    storyList.add(StoryModel("A", "", ""));
+    storyList.add(StoryModel("B", "", ""));
+    storyList.add(StoryModel("C", "", ""));
+    storyList.add(StoryModel("D", "", ""));
+    storyList.add(StoryModel("E", "", ""));
+    storyList.add(StoryModel("F", "", ""));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
