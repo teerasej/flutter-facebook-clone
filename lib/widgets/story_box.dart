@@ -35,7 +35,7 @@ class _StoryBoxState extends State<StoryBox> {
                 children: <Widget>[
                   Container(
                     // padding: EdgeInsets.all(10.0),
-                    width: 160.0,
+                    width: 140.0,
                     // color: Colors.red,
                     child: Stack(
                       fit: StackFit.expand,
