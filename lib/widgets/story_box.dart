@@ -27,12 +27,38 @@ class _StoryBoxState extends State<StoryBox> {
                   )
                 ],
               ),
-              ListView(
-                children: <Widget>[
-                  ListTile(
-                    title: Text('1'),
-                  ),
-                ],
+              Expanded(
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 140.0,
+                      color: Colors.amber,
+                      child: Stack(
+                        fit: StackFit.expand,
+                        children: <Widget>[
+                          // ภาพ background 
+                          Container(
+
+                          ),
+                          Positioned(
+                            bottom: 10.0,
+                            left: 0.0,
+                            right: 0.0,
+                            child: Column(
+                              children: <Widget>[
+                                CircleAvatar(
+                                  backgroundImage: NetworkImage('https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15267619_10154789415276098_1443357584742520709_n.jpg?_nc_cat=103&_nc_eui2=AeHuPeABmNHVHNpJgJ00gVIAjRAxxXJZ_96UDcsaOCG8-e3G_brNJ_nMrKTDV1Wx-qMAz1pw_XBqcY3YhY87vgU1-py_G_VSaJy6RHQUHjrBAQ&oh=c6ccfa1910c5e9908fc779903f1b78db&oe=5C5F4BA1'),
+                                ),
+                                Text('username')
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ],
           ),
