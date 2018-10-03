@@ -11,10 +11,10 @@ class _StoryBoxState extends State<StoryBox> {
 
   _StoryBoxState() {
     
-    storyList.add(StoryModel("Teerasej","https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15267619_10154789415276098_1443357584742520709_n.jpg?_nc_cat=103&_nc_eui2=AeHuPeABmNHVHNpJgJ00gVIAjRAxxXJZ_96UDcsaOCG8-e3G_brNJ_nMrKTDV1Wx-qMAz1pw_XBqcY3YhY87vgU1-py_G_VSaJy6RHQUHjrBAQ&oh=c6ccfa1910c5e9908fc779903f1b78db&oe=5C5F4BA1", "https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428566598/article/R11931_image1"));
-    storyList.add(StoryModel("Teerasej","https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15267619_10154789415276098_1443357584742520709_n.jpg?_nc_cat=103&_nc_eui2=AeHuPeABmNHVHNpJgJ00gVIAjRAxxXJZ_96UDcsaOCG8-e3G_brNJ_nMrKTDV1Wx-qMAz1pw_XBqcY3YhY87vgU1-py_G_VSaJy6RHQUHjrBAQ&oh=c6ccfa1910c5e9908fc779903f1b78db&oe=5C5F4BA1", "https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428566598/article/R11931_image1"));
-    storyList.add(StoryModel("Teerasej","https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15267619_10154789415276098_1443357584742520709_n.jpg?_nc_cat=103&_nc_eui2=AeHuPeABmNHVHNpJgJ00gVIAjRAxxXJZ_96UDcsaOCG8-e3G_brNJ_nMrKTDV1Wx-qMAz1pw_XBqcY3YhY87vgU1-py_G_VSaJy6RHQUHjrBAQ&oh=c6ccfa1910c5e9908fc779903f1b78db&oe=5C5F4BA1", "https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428566598/article/R11931_image1"));
-    storyList.add(StoryModel("Teerasej","https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/15267619_10154789415276098_1443357584742520709_n.jpg?_nc_cat=103&_nc_eui2=AeHuPeABmNHVHNpJgJ00gVIAjRAxxXJZ_96UDcsaOCG8-e3G_brNJ_nMrKTDV1Wx-qMAz1pw_XBqcY3YhY87vgU1-py_G_VSaJy6RHQUHjrBAQ&oh=c6ccfa1910c5e9908fc779903f1b78db&oe=5C5F4BA1", "https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428566598/article/R11931_image1"));
+    storyList.add(StoryModel("Captain","http://static.shoplightspeed.com/shops/609551/files/002433978/dynamic-discs-dyemax-marvel-captain-america-truth.jpg", "http://static.shoplightspeed.com/shops/609551/files/002433978/dynamic-discs-dyemax-marvel-captain-america-truth.jpg"));
+    storyList.add(StoryModel("Iron Man","https://cdn.images.express.co.uk/img/dynamic/36/590x/Avengers-Iron-Man-was-almost-played-by-another-major-star-936289.jpg", "https://cdn.images.express.co.uk/img/dynamic/36/590x/Avengers-Iron-Man-was-almost-played-by-another-major-star-936289.jpg"));
+    storyList.add(StoryModel("Black Widow","https://am24.akamaized.net/tms/cnt/uploads/2015/06/black_widow_avengers_age_of_ultron-wide-1280x800.jpg", "https://am24.akamaized.net/tms/cnt/uploads/2015/06/black_widow_avengers_age_of_ultron-wide-1280x800.jpg"));
+    storyList.add(StoryModel("Thanos","https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/52/Empire_March_Cover_IW_6_Textless.png", "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/52/Empire_March_Cover_IW_6_Textless.png"));
   
   }
 
@@ -79,7 +79,13 @@ class _StoryBoxState extends State<StoryBox> {
                                 CircleAvatar(
                                   backgroundImage: NetworkImage(story.profileImageURL),
                                 ),
-                                Text(story.username)
+                                Text(
+                                  story.username, 
+                                    style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                   
+                                  ),)
                               ],
                             ),
                           )
